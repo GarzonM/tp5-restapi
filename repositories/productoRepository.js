@@ -1,4 +1,3 @@
-// repositories/productoRepository.js
 
 const productos = [];
 

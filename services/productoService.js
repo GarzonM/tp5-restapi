@@ -1,4 +1,3 @@
-// services/productoService.js
 
 const { guardarProducto, listarProductos } = require('../repositories/productoRepository');
 

@@ -1,16 +1,13 @@
-// controllers/productoController.js
 
 const express = require('express');
 const router = express.Router();
 const { agregarProducto, obtenerProductos } = require('../services/productoService');
 
-// GET /productos
 router.get('/productos', (req, res) => {
   const productos = obtenerProductos();
   res.json(productos);
 });
 
-// POST /productos
 router.post('/productos', (req, res) => {
   const { nombre, precio } = req.body;
   
